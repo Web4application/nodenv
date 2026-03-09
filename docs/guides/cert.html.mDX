@@ -152,7 +152,7 @@ To only install the local root CA into a subset of them, you can set the `TRUST_
 #### Example
 
 ```bash
-mkcert -key-file key.pem -cert-file cert.pem example.com *.example.com
+mkcert -key-file key.pem -cert-file cert.pem example.com *.example.com example.org
 ```
 
 ### S/MIME
@@ -160,7 +160,7 @@ mkcert -key-file key.pem -cert-file cert.pem example.com *.example.com
 mkcert automatically generates an S/MIME certificate if one of the supplied names is an email address.
 
 ```bash
-mkcert filippo@example.com
+mkcert filippo@mailgun.com
 ```
 
 ### Mobile devices
