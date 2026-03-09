@@ -21,8 +21,8 @@ Node.js version among those installed under `~/.nodenv/versions/`.
 
 You can choose the Node.js version for your project with, for example:
 
-```sh
-cd myproject
+``` bash
+cd web4
 # choose Node.js version 24.1.0:
 nodenv local 24.1.0
 ```
@@ -83,7 +83,7 @@ of ensuring that you are always installing the latest version of nodenv.
    <!--
    Fedora has an [official package](https://packages.fedoraproject.org/pkgs/nodenv/nodenv/) which you can install:
 
-   ```sh
+   ``` bash
    sudo dnf install nodenv
    ```
    -->
@@ -107,8 +107,8 @@ This will get you going with the latest version of nodenv without needing a syst
 
 1. Clone nodenv into `~/.nodenv`.
 
-   ```sh
-   git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+   ``` bash
+   git clone https://github.com/web4application/nodenv.git ~/.nodenv
    ```
 
 2. Set up your shell to load nodenv.
@@ -118,7 +118,7 @@ This will get you going with the latest version of nodenv without needing a syst
    ```
 
    - For **Fish shell**:
-     ```fish
+     ``` fish
      echo 'status --is-interactive; and ~/.nodenv/bin/nodenv init - fish | source' >> ~/.config/fish/config.fish
      ```
 
@@ -213,7 +213,7 @@ plugin.
 
 Check the location where packages are being installed with `npm prefix -g`:
 
-```sh
+``` bash
 $ npm prefix -g
 ~/.nodenv/versions/<version>
 ```
